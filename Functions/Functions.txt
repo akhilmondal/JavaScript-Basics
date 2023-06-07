@@ -1,0 +1,33 @@
+Different types of functions in JavaScript
+------------------------------------------
+
+-Basically there are two types of functions are there.
+   1. Regular functions
+   2. Arrow functions
+
+Regular functions
+-----------------
+
+- The function which we need to declare with 'function' keyword is the regular function. 
+ex- function test() {
+        console.log("hello Akhil")
+    } 
+
+Arrow function
+--------------
+
+- The function without 'function' keyword declaration is known as arrow functions.
+ex- let func = () => {
+        console.log("Hello Akhil")
+    }
+
+
+Different between Regular and Arrow functions
+---------------------------------------------
+
+i. Arrow functions are Shorter than Regular functions which makes arrow function easier to use.
+ii. Arguments binding is not possible in arrow functions where as in Regular function it is possible.
+    That means, in a regular function we can pass multiple arguments in a function without declaring them when creating a function.
+
+iii. We can't use 'this' key to get the value with arrow functions. But it workes with regular functions.
+iv. In Arrow function we can't pass duplicate name arguments. But in Reguler function it works. (a, a) 
