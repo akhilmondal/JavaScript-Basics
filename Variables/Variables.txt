@@ -1,0 +1,52 @@
+**************Variables*********************************
+
+- In JavaScript, variables work as a container where we can store data or values which can be manipulated or accessed throughout the code. 
+- JavaScript provide three keyword to declare a variable,
+        1. var
+        2. let
+        3. const
+
+- Variable names must begin with a letter, underscore (_), or a dollar sign ($).
+- These keywords have there own scope of accesability.
+- Variables declared with 'var' and 'let' can be reassigned to new values.
+- Variables declared with 'const' cannot be reassigned once a value is assigned(for premitive datatype).
+  For non-primitive we can modify the values of the variable, declared with const keyword.
+
+
+Variables with 'var' keyword
+----------------------------
+
+- It have function scope or global scope based on the declaration.
+- Variable declared outside of the function or outside of any block will have the global scope for which we can access it anywhere in that code.
+- Variables declared with var inside a function are locally scoped to that function.
+- They are accessible within the function and any nested functions or blocks inside that function.
+- It allows Hoisting.
+
+Variables with 'let' keyword
+----------------------------
+
+- Variables declared with 'let' are block-scoped, which means they are limited in scope to the block they are declared in.
+- Due to block scoped, we can access the variable declared with 'let' keyword only inside the block or inside the function.
+- We can reinitialise or reassign a value to a let variable.
+- But we can't redeclare the same variable with 'let' keyword.
+- It doesn't allow Hoisting. 
+
+Variables with 'const' keyword
+------------------------------
+
+- Like variables declared with let, const variables are block-scoped.
+- They are limited in scope to the block they are declared in, whether it's a loop, if statement, or standalone block.
+- Variables declared with const must be initialized with a value at the time of declaration.
+- Once assigned, the value of a const variable cannot be changed or reassigned for the primitive datatypes.
+- But still we can modify an array or object which is declared with 'const' keyword.
+
+Hoisting in JavaScript
+----------------------
+
+- When our javascript codes are getting compile, 
+  all the functions and variable declarations of your code are going to scanned and stored inside a javascript data structure,
+  called as Lexical Environment. So that they can be used even before they are actually declared in the source code.
+- A lexical environment is a data structure that holds identifier-variable mapping. (here identifier refers to the name of variables/functions,
+  and the variable is the reference to actual object or primitive value).
+- So basically it means Lexical Environment is the place where functions and variables live during the program execution.
+- JavaScript only stores function and variable declarations in the memory, not their assignments (value).
