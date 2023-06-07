@@ -1,0 +1,63 @@
+**************Data Types*************************
+
+# What is data types in JavaScript? 
+ 
+ -In JavaScript, data types represent the kind of data that can be stored and manipulated within a program.
+
+# How many types of DataTypes are there?
+ 
+    1. Primitive Data Types:
+
+        Number: Represents numeric values, including integers and floating-point numbers.
+                - let a = 200;
+                - Operations we can do with number datatypes.
+                    -Arithmetic Operations:
+
+                        Addition: +
+                        Subtraction: -
+                        Multiplication: *
+                        Division: /
+                        Modulo (Remainder): %
+
+                    -Increment and Decrement:
+
+                        Increment: ++
+                        Decrement: --
+                    
+                    -Comparison Operations:
+
+                        Equal to: == or ===
+                        Not equal to: != or !==
+                        Greater than: >
+                        Less than: <
+                        Greater than or equal to: >=
+                        Less than or equal to: <=
+
+
+        String: Represents a sequence of characters enclosed in single quotes (') or double quotes (").
+                - let a = "akhil";
+                        or
+                  let b = 'Mondal'
+
+        Boolean: Represents a logical value.
+                - either true or false.
+
+        Undefined: Represents an uninitialized or unassigned value.
+                - let a;
+                    console.log(a);
+                //OUTPUT = Undefined.
+
+        Null: Represents the intentional absence of any object value.
+                -When we want to make an variable without any values.
+                 We assign that variable as null datatype.
+
+
+    2. Object Data Type:
+
+        Object: Represents a collection of key-value pairs or properties. 
+            -Objects can contain various data types and methods.
+
+        Array: Represents an ordered list of values, which can be of any data type.
+            - In JAvaScript The datatype of the elements can be different.
+
+        Function: Represents a reusable block of code that performs a specific task when called.
