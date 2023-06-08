@@ -44,9 +44,12 @@ Hoisting in JavaScript
 ----------------------
 
 - When our javascript codes are getting compile, 
-  all the functions and variable declarations of your code are going to scanned and stored inside a javascript data structure,
+  all the functions and variable declarations of the code are going to scanned and stored inside a javascript data structure,
   called as Lexical Environment. So that they can be used even before they are actually declared in the source code.
 - A lexical environment is a data structure that holds identifier-variable mapping. (here identifier refers to the name of variables/functions,
   and the variable is the reference to actual object or primitive value).
 - So basically it means Lexical Environment is the place where functions and variables live during the program execution.
 - JavaScript only stores function and variable declarations in the memory, not their assignments (value).
+- All declarations (function, var, let, const and class) are hoisted in JavaScript,
+  while the var declarations are initialized with undefined, but let and const declarations remain uninitialized.
+- “Temporal Dead Zone”, A time span between variable creation and its initialization where they can’t be accessed.

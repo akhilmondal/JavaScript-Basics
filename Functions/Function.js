@@ -11,9 +11,9 @@
 // console.log("The result of the Regular function is: "+additionResult);
 
 
-
-//By using arrow function we can aquire the same result with less code.
 //Arrow Functions.
+//By using arrow function we can aquire the same result with less code.
+
 
 // let substractionResult = (num1, num2) => {
 //     return num1 - num2;
@@ -52,4 +52,4 @@ let hello = {
     }
 };
 hello.thisInRegularFunction();
-hello.thisInArrowFunction();
+hello.thisInArrowFunction();  // output: undefined

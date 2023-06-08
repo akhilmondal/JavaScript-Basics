@@ -1,5 +1,8 @@
 //variables with 'var' keyword
+//----------------------------------------
+
 // It have function scope or global scope based on the declaration.
+
 // var varGlobal = "Akhil";  
 // function variableVarFunction() {
 //     //Variables declared with var inside a function are locally scoped to that function.
@@ -26,6 +29,8 @@
 
 
 //variables with 'let' keyword
+//---------------------------------------------------
+
 // let letGlobal = "Akhil";  
 // function variableLetFunction() {
 
@@ -50,6 +55,8 @@
 
 
 //variables with 'const' keyword
+//------------------------------------------
+
 // const constGlobal = "Akhil";  
 // function variableConstFunction() {
 
@@ -72,6 +79,67 @@
 
 
 
-//Hoisting
-// It works only with var keyword.
-// 
+// Hoisting
+//--------------------------------------------------
+// JavaScript only stores function and variable declarations in the memory, not their assignments (value).
+
+
+// helloAkhil();
+// // helloMondal();  // TypeError: helloMondal is not a function
+// function helloAkhil() {
+//     console.log("hello Akhil Mondal");
+// }
+
+// var helloMondal = function helloAkhil() {  //function assignment will not going to be store in lexical Environment. so it will not work here.
+//     console.log("Hello Mondal akhil");
+// }
+
+
+// Hoisting with 'var' variables
+//------------------------------
+var a;  // here we declared the variable but without initialisation, So it will get initialised by the JavaSCript Engine as undefined.
+console.log(a);  // output: undefined.
+var a = 30;
+console.log(a);  // output: 30
+
+
+//Hoisting with 'let' keyword
+//-----------------------------
+
+// For the 'let' and 'const' variable declaration, it get stored in the Lexical Environment but not get  initialised by the JavaSCript Engine.
+// console.log(b);  // output: ReferenceError: Cannot access 'b' before initialization
+// let b = "Akhil";
+let b; //During compilation the JS engine try to fetch the value of this variable. 
+//But still here we are not initialising it so engine will initialise it with undefined. 
+console.log(b);  // output: undefined
+
+// console.log(c);  // output: ReferenceError: Cannot access 'c' before initialization
+// const c = "Mondal";
+
+
+// Function call after declaring and initialising the variable.
+//-------------------------------------------------------------
+
+function test() {
+    console.log(firstName);
+}
+let firstName;
+firstName = 'Akhil';
+test();
+
+
+
+// Hoisting Class Declaration
+//---------------------------
+
+//let akhil = new Person('Akhil', 'Mondal', 25); 
+//console.log(akhil);                                  
+class Person {
+  constructor(firstName, lastName,  age) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+  }
+}
+let abhilash = new Person('Abhilash', 'Mondal', 25); 
+console.log(abhilash);

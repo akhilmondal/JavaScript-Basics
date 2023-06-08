@@ -1,3 +1,12 @@
+JavaScript functions
+--------------------
+
+- In JavaScript, functions are reusable blocks of code that perform specific tasks or calculations. 
+  Functions allow you to encapsulate a set of instructions and execute them whenever needed by invoking the function.
+
+
+
+
 Different types of functions in JavaScript
 ------------------------------------------
 
