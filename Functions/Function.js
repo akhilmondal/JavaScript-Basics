@@ -22,7 +22,7 @@
 // console.log("The result of the Arrow function is: "+result);
 
 
-//****************Same Parameter or arguments************************/
+//****************Same Parameter************************/
 //Passing Same name parameters in the function.
 // function sameParameter(number, number) {
 //     let result =  number + number;

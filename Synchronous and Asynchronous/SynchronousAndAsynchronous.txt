@@ -1,0 +1,60 @@
+Q1. What is JavaScript?
+
+    A: JavaScript is a single-threaded, non-blocking, asynchronous, concurrent programming language with lots of flexibility.
+
+Q2. So what happens when you define a function and then invoke it?
+
+    A: The JavaScript engine maintains a stack data structure called function execution stack. 
+    The purpose of the stack is to track the current function in execution. It does the following:
+
+        -When the JavaScript engine invokes a function, it adds it to the stack, and the execution starts.
+        -If the currently executed function calls another function, the engine adds the second function to the stack and starts executing it.
+        -Once it finishes executing the second function, the engine takes it out from the stack.
+        -The control goes back to resume the execution of the first function from the point it left it last time.
+        -Once the execution of the first function is over, the engine takes it out of the stack.
+        -Continue the same way until there is nothing to put into the stack.
+
+        note: The function execution stack is also known as the Call Stack.
+
+
+Q3. What is Synchronous in JavaScript?
+
+    A:  The bottom line is that everything that happens inside the function execution stack is sequential.
+        This is the Synchronous part of JavaScript.
+        JavaScript's main thread makes sure that it takes care of everything in the stack before it starts looking into anything elsewhere.
+
+
+Q4. What is Asynchronous in JavaScript?
+    A:  The word asynchronous means not occurring at the same time.
+        So basically Asynchronous means executing Functions in the background which not required at the moment.
+        Suppose you have a function and you want it to run or execute after all the other function execution. Here, Asynchronous functionality comes in. 
+
+Q5. What is Event Loop in JavaScript?
+    A: During code execution, The engine creates a loop to look into the queue periodically to find what it needs to pull from there. 
+       It pulls a callback function from the queue to the call stack when the stack is empty. 
+       Now the callback function executes generally as any other function in the stack. The loop continues. 
+       This loop is famously known as the Event Loop.
+
+Q5. What is Browser API/ Web API in JavaScript ?
+    A: In JavaScript, the term "Browser API" refers to a collection of built-in interfaces and functions provided by web browsers to interact with various aspects of the browser environment and web pages. 
+       These APIs allow developers to access and manipulate different features of the browser,
+       such as manipulating the Document Object Model (DOM), making HTTP requests, handling events, accessing browser storage, and more.
+
+Q6. What is API ?
+    A: API stands for Application Programming Interface. 
+       It is a set of rules and protocols that allows different software applications to communicate with each other.
+       In the context of web development, 
+       an API is typically used to enable interaction between a web application and external services, databases, or other applications. 
+       It provides a way for developers to access certain functionality or data from an external source without needing to understand the internal implementation details.
+
+Q7. What is Promises in JAvaScript ?
+    A: In JavaScript, promises are special objects that help you perform asynchronous operations.
+
+
+
+
+
+Reference Links:
+
+- https://www.freecodecamp.org/news/synchronous-vs-asynchronous-in-javascript/
+- https://github.com/atapas/promise-interview-ready

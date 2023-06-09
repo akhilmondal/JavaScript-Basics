@@ -36,7 +36,5 @@ Different between Regular and Arrow functions
 
 i. Arrow functions are Shorter than Regular functions which makes arrow function easier to use.
 ii. Arguments binding is not possible in arrow functions where as in Regular function it is possible.
-    That means, in a regular function we can pass multiple arguments in a function without declaring them when creating a function.
-
 iii. We can't use 'this' key to get the value with arrow functions. But it workes with regular functions.
 iv. In Arrow function we can't pass duplicate name arguments. But in Reguler function it works. (a, a) 
