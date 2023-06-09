@@ -3,33 +3,34 @@
 
 // It have function scope or global scope based on the declaration.
 
-// var varGlobal = "Akhil";  
-// function variableVarFunction() {
-//     //Variables declared with var inside a function are locally scoped to that function.
-//     //They are accessible within the function and any nested functions or blocks inside that function.
-//     console.log("Inside the function: "+varGlobal);
-//     var varFunction = "JavaScript";
+var varGlobal = "Akhil";  
+function variableVarFunction() {
+    //Variables declared with var inside a function are locally scoped to that function.
+    //They are accessible within the function and any nested functions or blocks inside that function.
+    console.log("Inside the function: "+varGlobal);
+    var varFunction = "JavaScript";
 
-//     {
-//         console.log("Inside the block: "+varGlobal);
-//         var varBlock = "Abhishek";
-//         console.log("Declared: inside the function, Accesing: inside the block:  "+varFunction); 
-//     }
+    {
+        console.log("Inside the block: "+varGlobal);
+        var varBlock = "Abhishek";
+        console.log("Declared: inside the function, Accesing: inside the block:  "+varFunction); 
+    }
     
-//     console.log("Declared: inside the block, Accesing: out side of the block "+varBlock);
-// }
-// variableVarFunction();
-// var varGlobal = "Appu";  //We can redeclare and reassign a variable with var keyword
-// console.log("Redeclared: "+varGlobal);
-// varGlobal = "Mondal";
-// console.log("Reassigned: "+varGlobal);
-//console.log("Declared: inside the function, Accesing: outside the function:  "+varFunction);  
-// it will throw an error =  ReferenceError: varFunction is not defined
+    console.log("Declared: inside the block, Accesing: out side of the block "+varBlock);
+}
+variableVarFunction();
+var varGlobal = "Appu";  //We can redeclare and reassign a variable with var keyword
+console.log("Redeclared: "+varGlobal);
+varGlobal = "Mondal";
+console.log("Reassigned: "+varGlobal);
+console.log("Declared: inside the function, Accesing: outside the function:  "+varFunction);  // it will throw an error =  ReferenceError: varFunction is not defined
+
 
 
 
 //variables with 'let' keyword
 //---------------------------------------------------
+// Variables declared with 'let' are block-scoped.
 
 // let letGlobal = "Akhil";  
 // function variableLetFunction() {
@@ -39,8 +40,8 @@
 
 //     {
 //         console.log("Inside the block: "+letGlobal);
+//         console.log("Declared: inside the function, Accesing: inside the block:  "+letFunction);
 //         let letBlock = "Abhishek";
-//         console.log("Declared: inside the function, Accesing: inside the block:  "+letFunction); 
 //     }
     
 //     //console.log("Declared: inside the block, Accesing: out side of the block "+letBlock); //ReferenceError: letBlock is not defined
@@ -84,15 +85,15 @@
 // JavaScript only stores function and variable declarations in the memory, not their assignments (value).
 
 
-// helloAkhil();
-// // helloMondal();  // TypeError: helloMondal is not a function
-// function helloAkhil() {
-//     console.log("hello Akhil Mondal");
-// }
+helloAkhil();
+// helloMondal();  // TypeError: helloMondal is not a function
+function helloAkhil() {
+    console.log("hello Akhil Mondal");
+}
 
-// var helloMondal = function helloAkhil() {  //function assignment will not going to be store in lexical Environment. so it will not work here.
-//     console.log("Hello Mondal akhil");
-// }
+var helloMondal = function helloAkhil() {  //function assignment will not going to be store in lexical Environment. so it will not work here.
+    console.log("Hello Mondal akhil");
+}
 
 
 // Hoisting with 'var' variables
