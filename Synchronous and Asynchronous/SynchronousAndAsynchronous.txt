@@ -19,7 +19,7 @@ Q2. So what happens when you define a function and then invoke it?
 
 Q3. What is Synchronous in JavaScript?
 
-    A:  The bottom line is that everything that happens inside the function execution stack is sequential.
+    A:  Everything that happens inside the function execution stack is sequential.
         This is the Synchronous part of JavaScript.
         JavaScript's main thread makes sure that it takes care of everything in the stack before it starts looking into anything elsewhere.
 
