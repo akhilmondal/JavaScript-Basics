@@ -54,6 +54,7 @@ Q7. What is Promises in JAvaScript ?
 
 
 
+
 Reference Links:
 
 - https://www.freecodecamp.org/news/synchronous-vs-asynchronous-in-javascript/
