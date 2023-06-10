@@ -2,19 +2,19 @@
 // Synchronous
 //----------------
 // All the function will get into the call stack sequentially and executes one by one.
-// function a1() {
-//     console.log("This is A1");
-// }
-// function a2() {
-//     a1();
-//     console.log("This is A2");
-// }
-// function a3() {
-//     a2();
-//     console.log("This is A3");
-// }
-// a3();
-// console.log("All functions are finished: ")
+function a1() {
+    console.log("This is A1");
+}
+function a2() {
+    a1();
+    console.log("This is A2");
+}
+function a3() {
+    a2();
+    console.log("This is A3");
+}
+a3();
+console.log("All functions are finished: ")
 
 
 // Asynchronous
