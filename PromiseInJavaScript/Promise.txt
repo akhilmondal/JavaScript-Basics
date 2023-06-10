@@ -1,0 +1,32 @@
+* Promise 
+  -------
+  - A Promise is an object representing the eventual completion or failure of an asynchronous operation.
+
+
+
+* JavaScript Promise Chaining
+  ---------------------------
+
+- Promises are useful when you have to handle more than one asynchronous task, one after another. For that, we use promise chaining.
+- You can perform an operation after a promise is resolved using methods then(), catch() and finally().
+
+
+* then()
+  ------
+    - The then() method is used with the callback when the promise is successfully fulfilled or resolved.
+
+* Catch()
+  -------
+  - The catch() method is used with the callback when the promise is rejected or if an error occurs.
+
+* Finally()
+  ---------
+  - You can also use the finally() method with promises.
+  - The finally() method gets executed when the promise is either resolved successfully or rejected.
+
+
+
+# Reference
+  ---------
+
+  - https://www.programiz.com/javascript/promise

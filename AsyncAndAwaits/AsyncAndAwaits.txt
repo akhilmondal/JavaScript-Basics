@@ -1,0 +1,28 @@
+Javscript async/await
+-----------------------
+
+* Async
+  --------------------------------------------
+  - We use the async keyword with a function to represent that the function is an asynchronous function.
+  - The async function returns a promise.
+
+* Await
+  -----
+  - The await keyword is used inside the async function to wait for the asynchronous operation.
+  - Note: You can use await only inside of async functions.
+
+
+* Error Handling
+  --------------
+  - While using the async function, you write the code in a synchronous manner.
+    And you can also use the catch() method to catch the error.
+  - The other way you can handle an error is by using try/catch block.
+
+TIPS: These two keywords async/await were introduced in the newer version of JavaScript (ES8).
+
+
+# Reference
+  ---------
+
+  - https://www.programiz.com/javascript/async-await
+  - https://www.freecodecamp.org/news/javascript-async-await-tutorial-learn-callbacks-promises-async-await-by-making-icecream/
