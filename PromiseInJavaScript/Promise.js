@@ -1,15 +1,15 @@
 // JavaScript Promise
 //------------------------------------------
 
-// let value = true;
+let value = true;
 
-// let checkValue = new Promise(function (resolve, reject) {
-//     if (value) {
-//         resolve("The Promise is resolved. ");
-//     } else {
-//         reject("The Promise isn't resolved. ");
-//     }
-// });
+let checkValue = new Promise(function (resolve, reject) {
+    if (value) {
+        resolve("The Promise is resolved. ");
+    } else {
+        reject("The Promise isn't resolved. ");
+    }
+});
 
 // console.log(checkValue);
 
