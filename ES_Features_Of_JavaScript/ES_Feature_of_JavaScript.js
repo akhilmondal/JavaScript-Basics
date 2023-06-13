@@ -1,7 +1,7 @@
 
 var ES6_Features
 
-// var Function_Parameter_Default_Value
+var Function_Parameter_Default_Value
 
 // function example(height = 50, width = 40) { 
 //     const newH = height * 10;
