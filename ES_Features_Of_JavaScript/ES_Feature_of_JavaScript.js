@@ -9,7 +9,7 @@ var Function_Parameter_Default_Value
 //     return newH + newW;
 // }
 
-// let result = example();
+// let result = example(null,10);
 // console.log(result);
 
 var Template_Literals

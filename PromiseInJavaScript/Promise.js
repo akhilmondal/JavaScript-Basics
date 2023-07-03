@@ -1,18 +1,30 @@
 // JavaScript Promise
 //------------------------------------------
 
-let value = true;
+// let value = true;
 
-let checkValue = new Promise(function (resolve, reject) {
-    if (value) {
-        resolve("The Promise is resolved. ");
-    } else {
-        reject("The Promise isn't resolved. ");
-    }
-});
+// let checkValue = new Promise(function (resolve, reject) {
+//     if (value) {
+//         resolve("The Promise is resolved. ");
+//     } else {
+//         reject("The Promise isn't resolved. ");
+//     }
+// });
 
 // console.log(checkValue);
 
+
+// let hi = new Promise((resolve, reject) => {
+
+//     setTimeout(() => {
+//         resolve("promise is resolved.");
+//     }, 3000);
+//     console.log("hello");
+
+// })
+// hi.then((result) => {
+//     console.log(result);
+// });
 
 // Promise chaining
 //----------------------------------
@@ -51,14 +63,41 @@ let checkValue = new Promise(function (resolve, reject) {
 // Finally()
 //-------------------------------------
 
-let example = new Promise(function (resolve, reject) {
-    // could be resolved or rejected   
-    resolve('Promise resolved'); 
+// let example = new Promise(function (resolve, reject) {
+//     // could be resolved or rejected   
+//     resolve('Promise resolved'); 
+// });
+
+// // add other blocks of code
+// example.finally(
+//     function greet() {
+//         console.log('This code is executed.');
+//     }
+// );
+
+// let promise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         console.log("hello promise");
+//         resolve("Promise resolved")
+//     }, 3000);
+// });
+
+// promise.then((result) => {
+//     console.log(result)
+// });
+
+let promise = new Promise((resolve,reject) => {
+    setTimeout(() => {
+        const data = Note.Find(id);
+        resolve("Data found");
+    }, 2000);
+})
+
+promise.then((result) => {
+    console.log("The data is found", result);
+
 });
 
-// add other blocks of code
-example.finally(
-    function greet() {
-        console.log('This code is executed.');
-    }
-);
+promise.catch((result) => {
+    console.log("the error is ", result);
+})

@@ -7,6 +7,8 @@ A: - Fast, unopinionated, minimalist web framework for Node.js
    - Express.js is a minimal and flexible web application framework for Node.js, which allows you to build web applications and APIs quickly and easily. 
      It provides a set of features and tools that simplify the process of handling HTTP requests, routing, and managing responses. Express.
      js is known for its simplicity and lightweight nature, making it popular among developers for building fast and scalable web applications. 
+   - Express.js provides a powerful and flexible framework for building web applications and APIs in Node.js. 
+     Its simplicity, routing capabilities, middleware system, and integration with the Node.js ecosystem make it a popular choice for web developers.
 
 Q2. What is Node js ?
 
@@ -58,3 +60,7 @@ A: - MongoDB:
      Mongoose, on the other hand, is an Object Data Modeling (ODM) library for Node.js 
      that provides a higher-level abstraction and additional features when working with MongoDB.
      It simplifies the interaction with MongoDB by adding a layer of structure and validation on top of the database.
+     
+Q7. What is API ?
+A: -API stands for Application Programming Interface. It is a set of rules, protocols, and tools that allow different software applications to communicate and interact with each other.
+    APIs define the methods and formats for requesting and exchanging data between applications.
