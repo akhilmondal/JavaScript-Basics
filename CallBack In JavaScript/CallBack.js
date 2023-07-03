@@ -4,20 +4,36 @@
 // Our code will not stop executing 
 
 // Normal Function
-function greet(name, callBack) {  // Here we are passing a string and a function as argument.
-    setTimeout(() => {
-        console.log("Operation will complete after 2 sec ")
-    }, 2000);
-    console.log('Hi' + ' ' + name);
-    callBack(); // Need to wait till completion of the above code.
-}
+// function greet(name, callBack) {  // Here we are passing a string and a function as argument.
+//     setTimeout(() => {
+//         console.log("Operation will complete after 2 sec ")
+//     }, 2000);
+//     console.log('Hi' + ' ' + name);
+//     callBack(); // Need to wait till completion of the above code.
+// }
 
-// callback function
-function callMe() {
-    console.log('I am callback function');
-}
+// // callback function
+// function callMe() {
+//     console.log('I am callback function');
+// }
 
-// passing function as an argument
-greet('Akhil', callMe);
+// // passing function as an argument
+// greet('Akhil', callMe);
 
 console.log("Call Back operation completed.")
+
+
+function greet1(name, callback) {
+    setTimeout(() => {
+        console.log("operation will complete after 2 sec", name);
+        callback();
+    }, 2000);
+    console.log("hello world");
+    
+}
+
+function hello() {
+    console.log("hello callback");
+}
+
+greet1("akhil", hello);

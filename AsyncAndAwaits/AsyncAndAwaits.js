@@ -1,4 +1,3 @@
-
 //Async
 //-----------------------------------
 
@@ -11,25 +10,38 @@
 //     console.log(result)
 // });
 
-
 // Await
 //-------------------------------------
 
-let promise = new Promise(function (resolve, reject) {
-    setTimeout(function () {
-    resolve('Promise resolved')}, 4000); 
-});
+// let promise = new Promise(function (resolve, reject) {
+//     setTimeout(function () {
+//     resolve('Promise resolved')}, 4000);
+// });
 
+// async function asyncFunction() {
 
-async function asyncFunction() {
-    
-    console.log("Waiting for the Promise to resolve.")
-    // wait until the promise resolves 
-    let result = await promise; 
+//     console.log("Waiting for the Promise to resolve.")
+//     // wait until the promise resolves
+//     let result =await promise;
 
-    console.log(result);
-    console.log('Asynchronous Function is complete. ');
-}
+//     console.log(result);
+//     console.log('Asynchronous Function is complete. ');
+// }
 
 // calling the async function
-asyncFunction();
+// asyncFunction();
+
+let hello = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    console.log("hello");
+    resolve("resolves promise.");
+  }, 3000);
+});
+
+async function hi() {
+  console.log("wait");
+  let result = await hello;
+  console.log(result);
+}
+
+hi();
