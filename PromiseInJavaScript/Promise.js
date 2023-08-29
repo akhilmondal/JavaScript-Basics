@@ -13,7 +13,6 @@
 
 // console.log(checkValue);
 
-
 // let hi = new Promise((resolve, reject) => {
 
 //     setTimeout(() => {
@@ -43,9 +42,9 @@
 //-------------------------------------
 
 // let exPromise = new Promise(function (resolve, reject) {
-//     reject('Promise rejected'); 
+//     reject('Promise rejected');
 //  });
- 
+
 //  // executes when promise is resolved successfully
 //  exPromise.then(
 //      function successValue(result) {
@@ -64,8 +63,8 @@
 //-------------------------------------
 
 // let example = new Promise(function (resolve, reject) {
-//     // could be resolved or rejected   
-//     resolve('Promise resolved'); 
+//     // could be resolved or rejected
+//     resolve('Promise resolved');
 // });
 
 // // add other blocks of code
@@ -86,18 +85,29 @@
 //     console.log(result)
 // });
 
-let promise = new Promise((resolve,reject) => {
-    setTimeout(() => {
-        const data = Note.Find(id);
-        resolve("Data found");
-    }, 2000);
-})
+// let promise = new Promise((resolve,reject) => {
+//     setTimeout(() => {
+//         const data = Note.Find(id);
+//         resolve("Data found");
+//     }, 2000);
+// })
 
-promise.then((result) => {
-    console.log("The data is found", result);
+// promise.then((result) => {
+//     console.log("The data is found", result);
 
+// });
+
+// promise.catch((result) => {
+//     console.log("the error is ", result);
+// })
+
+let promise = new Promise((resolve, reject) => {
+  resolve("promise resolved");
 });
-
-promise.catch((result) => {
-    console.log("the error is ", result);
-})
+promise
+  .then((result) => {
+    console.log(result);
+  })
+  .catch((error) => {
+    console.log(error);
+  });

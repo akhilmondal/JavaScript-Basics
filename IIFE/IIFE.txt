@@ -1,0 +1,4 @@
+IIFE stands for Immediately Invoked Function Expression.
+It is a JavaScript design pattern that allows you to create and execute a function immediately after its declaration. 
+IIFE is commonly used to create a private scope for variables, 
+avoiding naming conflicts and polluting the global scope.
